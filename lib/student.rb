@@ -12,7 +12,7 @@ class Student
   end
 
   def self.create_from_collection(students_array)
-
+    
 
     @@all << self
   end
