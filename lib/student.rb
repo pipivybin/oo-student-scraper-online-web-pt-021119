@@ -25,6 +25,7 @@ class Student
     attributes_hash.each do
       |key, value| student.send(("#{key}="), value) if student.key == nil
     end
+  end
     self
   end
 
