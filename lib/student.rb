@@ -15,8 +15,6 @@ class Student
     students_array.each do
       |student| initialize(student)
     end
-
-    @@all << self
   end
 
   def add_student_attributes(attributes_hash)
