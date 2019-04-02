@@ -18,7 +18,7 @@ class Student
   end
 
   def add_student_attributes(attributes_hash)
-    self.class.all.detect {|x| x.name == attributes_hash[:name]}
+    student = self.class.all.detect {|x| x.name == attributes_hash[:name]}
 
 
     attributes_hash.each do
