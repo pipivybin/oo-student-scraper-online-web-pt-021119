@@ -19,6 +19,7 @@ class Student
 
   def add_student_attributes(attributes_hash)
     student = self.class.all.detect {|x| x.name == attributes_hash[:name]}
+    if student == nil
     attributes_hash.each do
       |key, value| student.send(("#{key}="), value) if student.key == nil
     end
