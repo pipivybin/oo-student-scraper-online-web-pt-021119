@@ -23,7 +23,7 @@ class Student
       self.class.new(attributes_hash)
     else
     attributes_hash.each do
-      |key, value| student.send(("#{key}="), value) if student.key == nil
+      |key, value| student.send(("#{key}="), value) #if student.key == nil
     end
   end
     self
